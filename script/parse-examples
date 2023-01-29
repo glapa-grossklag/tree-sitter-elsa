@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -16,7 +16,7 @@ function checkout() {
   popd
 }
 
-# checkout examples/elsa ucsd-progsys/elsa 00e0bb97326cce5329dee8652f1531a4ed111d19
+checkout examples/elsa ucsd-progsys/elsa 00e0bb97326cce5329dee8652f1531a4ed111d19
 
 known_failures="$(cat script/known_failures.txt)"
 

@@ -9,7 +9,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/duskmoon314/tree-sitter-thrift/issues"
+    "url": "https://github.com/glapa-grossklag/tree-sitter-elsa/issues"
   },
   "dependencies": {
     "nan": "^2.15.0"
@@ -28,7 +28,7 @@
   },
   "tree-sitter": [
     {
-      "scope": "source.elsa",
+      "scope": "source.lc",
       "file-types": [
         "lc"
       ]
