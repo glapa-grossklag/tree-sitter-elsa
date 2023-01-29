@@ -28,8 +28,13 @@
           "value": "let"
         },
         {
-          "type": "SYMBOL",
-          "name": "identifier"
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          },
+          "named": true,
+          "value": "function"
         },
         {
           "type": "STRING",
@@ -49,8 +54,13 @@
           "value": "eval"
         },
         {
-          "type": "SYMBOL",
-          "name": "identifier"
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          },
+          "named": true,
+          "value": "method"
         },
         {
           "type": "STRING",
@@ -78,10 +88,6 @@
         }
       ]
     },
-    "identifier": {
-      "type": "PATTERN",
-      "value": "[A-Za-z_]+[A-Za-z_0-9]*"
-    },
     "abstraction": {
       "type": "SEQ",
       "members": [
@@ -95,8 +101,13 @@
           "content": {
             "type": "REPEAT1",
             "content": {
-              "type": "SYMBOL",
-              "name": "identifier"
+              "type": "ALIAS",
+              "content": {
+                "type": "SYMBOL",
+                "name": "identifier"
+              },
+              "named": true,
+              "value": "parameter"
             }
           }
         },
@@ -203,15 +214,32 @@
         }
       ]
     },
-    "comment": {
+    "identifier": {
       "type": "PATTERN",
-      "value": "--.*"
+      "value": "[A-Za-z_]+[A-Za-z_0-9]*"
+    },
+    "comment": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "--"
+        },
+        {
+          "type": "PATTERN",
+          "value": "(\\\\(.|\\r?\\n)|[^\\\\\\n])*"
+        }
+      ]
     }
   },
   "extras": [
     {
       "type": "PATTERN",
       "value": "\\s"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "comment"
     }
   ],
   "conflicts": [],
