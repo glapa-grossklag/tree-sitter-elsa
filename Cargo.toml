@@ -1,7 +1,11 @@
 [package]
 name = "tree-sitter-elsa"
-description = "elsa grammar for the tree-sitter parsing library"
+description = "Elsa grammar for the tree-sitter parsing library"
 version = "0.0.1"
+author = [
+	"Miles Glapa-Grossklag <miles@glapa-grossklag.com>",
+	"Amaan Qureshi <amaanq12@gmail.com>",
+]
 keywords = ["incremental", "parsing", "elsa"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/tree-sitter/tree-sitter-elsa"
@@ -9,12 +13,7 @@ edition = "2018"
 license = "MIT"
 
 build = "bindings/rust/build.rs"
-include = [
-  "bindings/rust/*",
-  "grammar.js",
-  "queries/*",
-  "src/*",
-]
+include = ["bindings/rust/*", "grammar.js", "queries/*", "src/*"]
 
 [lib]
 path = "bindings/rust/lib.rs"
