@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "bindings/node",
+  "keywords": [
+    "parser",
+    "lexer",
+    "elsa"
+  ],
   "author": "Miles Glapa-Grossklag <miles@glapa-grossklag.com>",
   "contributors": [
     "amaanq (Amaan Qureshi) <amaanq12@gmail.com>"
@@ -31,6 +36,9 @@
       "scope": "source.lc",
       "file-types": [
         "lc"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
       ]
     }
   ]
