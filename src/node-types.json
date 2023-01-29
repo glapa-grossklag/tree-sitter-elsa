@@ -18,7 +18,7 @@
         "required": true,
         "types": [
           {
-            "type": "identifier",
+            "type": "parameter",
             "named": true
           }
         ]
@@ -52,6 +52,11 @@
     }
   },
   {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "definition",
     "named": true,
     "fields": {},
@@ -60,7 +65,7 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "function",
           "named": true
         },
         {
@@ -79,7 +84,7 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "method",
           "named": true
         },
         {
@@ -153,6 +158,10 @@
     "named": false
   },
   {
+    "type": "--",
+    "named": false
+  },
+  {
     "type": "->",
     "named": false
   },
@@ -193,11 +202,23 @@
     "named": false
   },
   {
+    "type": "function",
+    "named": true
+  },
+  {
     "type": "identifier",
     "named": true
   },
   {
     "type": "let",
     "named": false
+  },
+  {
+    "type": "method",
+    "named": true
+  },
+  {
+    "type": "parameter",
+    "named": true
   }
 ]
