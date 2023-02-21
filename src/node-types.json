@@ -52,11 +52,6 @@
     }
   },
   {
-    "type": "comment",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "definition",
     "named": true,
     "fields": {},
@@ -158,10 +153,6 @@
     "named": false
   },
   {
-    "type": "--",
-    "named": false
-  },
-  {
     "type": "->",
     "named": false
   },
@@ -196,6 +187,10 @@
   {
     "type": "\\",
     "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
   },
   {
     "type": "eval",
