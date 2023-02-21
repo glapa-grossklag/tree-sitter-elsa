@@ -1,7 +1,7 @@
 {
   "name": "tree-sitter-elsa",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Elsa grammar for tree-sitter",
   "main": "bindings/node",
   "keywords": [
     "parser",
@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/glapa-grossklag/tree-sitter-elsa/issues"
   },
+  "homepage": "https://github.com/glapa-grossklag/tree-sitter-elsa#readme",
   "dependencies": {
     "nan": "^2.15.0"
   },
