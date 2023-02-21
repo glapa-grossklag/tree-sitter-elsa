@@ -9,5 +9,5 @@ eval id_zero :
   =d> zero                    -- expand definitions
 
 eval id_zero_tr :
-  id zero  
+  id zero
   =*> zero                    -- transitive reductions

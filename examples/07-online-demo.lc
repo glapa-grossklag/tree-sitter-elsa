@@ -4,7 +4,7 @@ let ONE  = \f x -> f x
 let TWO  = \f x -> f (f x)
 let INCR = \n f x -> f (n f x)
 
-eval alpha_equiv : 
+eval alpha_equiv :
   (\x -> x)
   =a> (\y -> y)
   =a> (\z -> z)
@@ -13,14 +13,14 @@ eval id_zero :
   ID ZERO
   =d> (\x -> x) (\f x -> x)
   =b> (\f x -> x)
-  =d> ZERO 
+  =d> ZERO
 
 eval succ_one :
-  INCR ONE 
+  INCR ONE
   =*> \f x -> f (ONE f x)
   =*> \f x -> f (f x)
-  =d> TWO 
+  =d> TWO
 
 eval succ_one_normal :
   INCR ONE
-  =~> TWO 
+  =~> TWO
